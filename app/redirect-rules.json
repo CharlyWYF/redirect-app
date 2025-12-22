@@ -1,0 +1,14 @@
+{
+    "rules": [
+        {
+            "source": "/",
+            "destination": "https://example.com",
+            "status": 302
+        },
+        {
+            "source": "/google",
+            "destination": "https://www.google.com",
+            "status": 302
+        }
+    ]
+}
