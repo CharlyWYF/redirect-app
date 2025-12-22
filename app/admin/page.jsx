@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 
 export default function Admin() {
-    const [rules, setRules] = useState<any[]>([])
+    const [rules, setRules] = useState([])
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
@@ -12,7 +12,7 @@ export default function Admin() {
             .finally(() => setLoading(false))
     }, [])
 
-    function updateRule(i: number, key: string, value: string) {
+    function updateRule(i, key, value) {
         const next = [...rules]
         next[i] = { ...next[i], [key]: value }
         setRules(next)
@@ -22,11 +22,7 @@ export default function Admin() {
         setRules([...rules, { source: '', destination: '', status: 302 }])
     }
 
-    async function save() {
-        // ⚠️ 注意：在 Vercel Edge 上无法直接写 public 文件
-        // 推荐方式：
-        // 1️⃣ 本地修改 redirect-rules.json 然后 git push → 自动 redeploy
-        // 2️⃣ 或搭建 API + 写入 DB / KV
+    function save() {
         alert('请在本地修改 public/redirect-rules.json 并 redeploy')
     }
 
