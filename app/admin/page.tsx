@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import rulesData from '../../redirect-rules.json'
+import rulesData from '../redirect-rules.json'
 
 export default function Admin() {
     const [rules, setRules] = useState(rulesData.rules)
