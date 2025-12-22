@@ -1,9 +1,16 @@
 'use client'
-import { useState } from 'react'
-import rulesData from '../../redirect-rules.json'
+import { useEffect, useState } from 'react'
 
 export default function Admin() {
-    const [rules, setRules] = useState(rulesData.rules)
+    const [rules, setRules] = useState<any[]>([])
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+        fetch('/redirect-rules.json')
+            .then(res => res.json())
+            .then(data => setRules(data.rules))
+            .finally(() => setLoading(false))
+    }, [])
 
     function updateRule(i: number, key: string, value: string) {
         const next = [...rules]
@@ -16,12 +23,14 @@ export default function Admin() {
     }
 
     async function save() {
-        await fetch('/api/save', {
-            method: 'POST',
-            body: JSON.stringify({ rules })
-        })
-        alert('保存成功，正在重新部署（约 30 秒生效）')
+        // ⚠️ 注意：在 Vercel Edge 上无法直接写 public 文件
+        // 推荐方式：
+        // 1️⃣ 本地修改 redirect-rules.json 然后 git push → 自动 redeploy
+        // 2️⃣ 或搭建 API + 写入 DB / KV
+        alert('请在本地修改 public/redirect-rules.json 并 redeploy')
     }
+
+    if (loading) return <div>Loading...</div>
 
     return (
         <main style={{ padding: 40 }}>
@@ -46,7 +55,7 @@ export default function Admin() {
 
             <button onClick={addRule}>新增规则</button>
             <button onClick={save} style={{ marginLeft: 8 }}>
-                保存并部署
+                保存（请本地修改 JSON 并 redeploy）
             </button>
         </main>
     )

@@ -15,20 +15,12 @@
         "moduleResolution": "bundler",
         "resolveJsonModule": true,
         "isolatedModules": true,
-        "jsx": "preserve",
-        "baseUrl": ".",
-        "paths": {
-            "@/*": [
-                "./*"
-            ]
-        }
+        "jsx": "preserve"
     },
     "include": [
         "next-env.d.ts",
         "**/*.ts",
-        "**/*.tsx",
-        "middleware.ts",
-        "redirect-rules.json"
+        "**/*.tsx"
     ],
     "exclude": [
         "node_modules"
