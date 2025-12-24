@@ -19,6 +19,11 @@
             "source": "/oopz",
             "destination": "https://oopz.cn/i/oW1Ur2",
             "status": 302
+        },
+        {
+            "source": "/cw2",
+            "destination": "https://streamshare.wireway.ch/download/7v4nnmx7",
+            "status": 302
         }
     ]
 }
