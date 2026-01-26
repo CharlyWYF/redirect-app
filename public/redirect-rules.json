@@ -12,17 +12,12 @@
         },
         {
             "source": "/clash",
-            "destination": "https://sub-aylz.koyeb.app/sub?target=clash&url=https%3A%2F%2Fnew.adoptangelaboradvacotionclwonthorughconfrmcompimentdeseertaltar.org%2Fsub%2Feca30fd3c2237d82%2Fclash&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Full_MultiMode.ini&exclude=false&filename=cw&interval=86400&append_info=true&emoji=true&list=false&xudp=false&udp=true&tfo=false&expand=true&scv=true&fdn=false&new_name=true",
+            "destination": "https://sub-aylz.koyeb.app/sub?target=clash&url=https%3A%2F%2Fis.domainforsub.work%2Fsub%2Feca30fd3c2237d82&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Full_MultiMode.ini&exclude=%E6%B5%81%E9%87%8F%7C%E8%BF%87%E6%9C%9F%7C%E5%AE%98%E7%BD%91%7C%E8%90%BD%E5%9C%B0%7C%E5%9B%9E%E5%9B%BD%7C%E6%9C%AC%E7%AB%99%7C%E7%94%A8%E6%88%B7%7C%E8%8B%A5%7C%E7%BB%AD%E8%B4%B9%7C%E9%82%AE%E7%AE%B1%7C%E8%AE%A2%E9%98%85&filename=cw2&append_info=true&emoji=true&list=false&xudp=false&udp=true&tfo=false&expand=true&scv=false&fdn=false&new_name=true",
             "status": 302
         },
         {
             "source": "/oopz",
             "destination": "https://oopz.cn/i/oW1Ur2",
-            "status": 302
-        },
-        {
-            "source": "/cw2",
-            "destination": "https://streamshare.wireway.ch/download/7v4nnmx7",
             "status": 302
         },
         {
