@@ -24,6 +24,11 @@
             "source": "/overcook-dlc",
             "destination": "https://streamshare.wireway.ch/download/wo5sbts0",
             "status": 302
+        },
+        {
+            "source": "/sutwifi",
+            "destination": "https://streamshare.wireway.ch/download/pizsfabt",
+            "status": 302
         }
     ]
 }
